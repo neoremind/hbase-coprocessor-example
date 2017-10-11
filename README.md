@@ -19,7 +19,7 @@ A MasterObserver allows you to observe events related to the HBase Master, such 
 A WalObserver allows you to observe events related to writes to the Write-Ahead Log (WAL). See WALObserver. Consider overriding the convenience class BaseWALObserver, which implements the WalObserver interface and will not break if new methods are added.
 
 ## Loading Coprocessors
-###Static Loading
+### Static Loading
 Follow these steps to statically load your coprocessor. Keep in mind that you must restart HBase to unload a coprocessor that has been loaded statically.
 
 Define the Coprocessor in hbase-site.xml, with a <property> element with a <name> and a <value> sub-element. The <name> should be one of the following:
